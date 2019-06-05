@@ -1,0 +1,72 @@
+
+<head>
+    <!--loading a unicode to the brother-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+     <!-- javascript -->
+     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+     <script src="code.js"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+   <!-- link to the css file-->
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+    <!--link to the dictionary which is being there at the data.js file-->
+    <script src="data.js"></script>
+    <!--link to google fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400italic' rel='stylesheet' type='text/css'>
+    <title>A dictionary from Leb Lango to English</title>
+</head>
+<body class="text-center">
+<h1>Leb Lango To English Translator</h1>
+<h2>
+<ul class="nav nav-pills">
+<li role="presentation" class="active"><a href="#">Home</a></li>
+<li role="presentation"><a href="paragraph.html">Paragraph</a></li>
+<li role="presentation"><a href="contact.html">contact</a></li>
+<li role="presentation"><a href="about.html">About Us</a></li>
+</ul>
+</h2>
+<div>
+
+   <!--title of the language selection and list of languages to be translated from and to ,being listed on the combobox-->
+   <p id="pIdTitle">language you need to translate from</p>
+   <select id="comboboxId1" onchange="switchTranslation()" width=300px>
+      <option>English to Lango</option>
+      <option>Lango to English</option>
+   </select>
+   <br>
+   <br>
+   <!--user input textbox-->
+ <p id="pIdInput">Type the word below please</p>
+ <input type="text" id="txtInputId" list="list1" onfocus="txtOnFocus()" onchange="comboboxSelectChange()"/>
+<!--populated data list from the dictionary -->
+ <datalist id="list1">
+
+ </datalist><br>
+ <br>
+ <!--translation button-->
+ <button class="btn-primary" onclick="btnTranslate()" id="btnId1">Translate</button>
+
+ <br>
+ <!--the output of the result for the user input-->
+ <p id="pIdResult">Here below is the translated word</p>
+  <textarea cols="20" rows="1" id="txtResultId"></textarea> 
+
+</div>
+<script type="text/javascript">
+     
+
+
+
+</script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
